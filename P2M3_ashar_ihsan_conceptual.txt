@@ -1,0 +1,51 @@
+
+Berikut merupakan jawaban-jawaban dari pertanyaan konseptual yang ada di repository.
+
+1. Apa yang dimaksud dengan NoSQL?
+
+NoSQL adalah jenis database yang tidak menggunakan struktur tabel relasional seperti pada database 
+SQL biasa. NoSQL biasanya digunakan untuk menangani data dalam jumlah besar, yang memiliki 
+variasi format data atau tidak memiliki skema yang tetap atau unstrucktured data. Dengan begitu,
+NoSQL dirancang untuk mendukung fleksibilitas tinggi, skala besar, dan performa cepat. 
+
+2. Kapan harus menggunakan NoSQL dan Relational Database Management System (RDBMS)?
+
+Kita menggunakan NoSQL ketika bekerja dengan data yang tidak memiliki struktur tetap atau sering berubah sewaktu waktu. 
+NoSQL cocok untuk  aplikasi yang memerlukan skalabilitas tinggi, penanganan data dalam jumlah besar secara cepat. 
+Untuk RDBMS sendiri digutnakan ketika data Anda memiliki struktur yang jelas dan tetap, serta Anda membutuhkan integritas data
+yang kuat. Contohnya adalah sistem keuangan, aplikasi manajemen bisnis, atau sistem inventaris di mana hubungan antar tabel penting 
+dan transaksi harus konsisten.
+
+3. Contoh 2 tools/platform NoSQL selain ElasticSearch beserta keunggulannya
+
+MongoDB: adalah database yang menyimpan data dalam format mirip JSON, seperti dokumen digital. Keunggulannya terletak pada 
+fleksibilitas tinggi, jadi kita bisa menambah atau mengubah struktur data dengan mudah tanpa perlu mendesain ulang database. 
+MongoDB cocok digunakan jika sering menambahkan jenis data baru atau data yang tidak punya pola tetap. MongoDB juga bisa 
+diperluas dengan menambah server, sehingga cocok untuk aplikasi yang berkembang cepat dan membutuhkan respons yang cepat.
+
+Cassandra: mirip seperti MongoDB, Cassandra merupakan database yang dirancang untuk menangani data dalam jumlah besar 
+dan tersebar di banyak lokasi. Keunggulan utamanya adalah ketersediaan data yang selalu terjaga. Kalau satu server gagal, 
+Cassandra tetap bisa berjalan karena datanya sudah disalin ke beberapa server lain. Ini sangat cocok untuk aplikasi 
+yang membutuhkan data selalu tersedia, seperti aplikasi media sosial atau e-commerce besar yang punya banyak pengguna 
+di seluruh dunia.
+
+4. Apa yang Anda ketahui tentang Apache Airflow?
+
+Airflow adalah alat untuk mengatur dan menjadwalkan pekerjaan yang berurutan (pipeline). Kita bisa membayangkan Airflow 
+seperti peta yang menunjukkan langkah-langkah proses yang harus dilakukan dalam sebuah alur kerja. Misalnya, kita punya 
+beberapa tugas seperti mengambil data, membersihkannya, dan menyimpannya—Airflow membantu menjalankan semua itu secara 
+otomatis dan memastikan setiap langkah berjalan sesuai urutan. Kita juga bisa melihat apakah ada yang gagal, dan memperbaikinya.
+
+5. Apa yang Anda ketahui tentang Great Expectations?
+
+Great Expectations adalah alat yang membantu untuk memeriksa apakah data yang kita pakai berkualitas bagus. 
+Dengan Great Expectations, kita bisa membuat aturan (disebut "expectations") seperti "kolom ini harus berisi angka" 
+atau "nilai-nilai ini harus unik". Alat ini membantu memastikan data yang gunakan benar dan sesuai harapan sebelum mulai 
+analisis atau modeling, jadi kita bisa menghindari masalah di kemudian hari.
+
+6. Apa yang Anda ketahui tentang Batch Processing?
+
+Untuk batch processing merupakan cara memproses data dalam jumlah besar sekaligus. Daripada memproses data satu per satu 
+secara langsung, kita menunggu data terkumpul, lalu memproses semuanya dalam satu waktu. Ini seperti umpamanya mengerjakan tugas 
+dalam satu tumpukan besar dekat deadline. Contoh penggunaan batch processing adalah memproses laporan penjualan harian atau 
+memperbarui data inventaris setiap malam. Tools yang biasa digunakan termasuk Apache Airflow atau Apache Spark.
