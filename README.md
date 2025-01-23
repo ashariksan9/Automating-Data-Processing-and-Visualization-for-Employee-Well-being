@@ -96,6 +96,5 @@ Berikut insight penting yang kita dapatkan dari analisis sebelumnya:
 ---
 
 ## Contact 📧
-Muhammad Ashar Ihsan  
-[LinkedIn](www.linkedin.com/in/muhammadasharihsan)  
+LinkedIn: www.linkedin.com/in/muhammadasharihsan  
 Email: ashar4iksan@gmail.com
